@@ -1,244 +1,199 @@
 html{
   font-size: 18px;
+}
+
+body{
   font-family: Helvetica;
   color: white;
 }
-.container{
-  max-width: 960px;
-}
-.container-store, .container-info{
-  max-width:960px;
-  margin:0 auto;
-}
-
-
-/* logo section */
-header{
+.header{
   background-color: black;
 }
-.header{
-  display: flex;
-  align-items: center;
+
+.container{
+  width: 960px;
+  margin: 0 auto;
 }
 
 .logo{
-  margin-left: 0.5rem;
-  margin-right: 1rem;
   height: 1.5rem;
+  padding-right: 1rem;
 }
 
-.title{
-  margin: 0.66rem 0;
+.header .container{
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+.header span{
   font-size: 1rem;
 }
 
-.banner{
-  height: 25rem;
+/* Main Banner */
+.background-banner{
   background-image: url("../../resources/images/moto.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  height: 25rem;
 }
-
-.main{
-  margin-left: 8rem;
-  background-color: black;
-  font-weight: bold;
+ .headline{
+  position: relative;
+  top: 9rem;
   width: 20rem;
-  padding: 2rem 3rem;
-
+  padding: 2rem 0 2rem 3rem;
+  background-color: black;
 }
-
-.arrival{
+.headline h4{
   font-size: 1rem;
+  font-weight: bold;
   margin-bottom: 0.25rem;
-
 }
-
-.bikes{
+.headline h2{
   font-size: 2rem;
-  text-transform: uppercase;
+  font-weight: bold;
 }
-/*Navigation section */
-.nav{
+.background-nav{
   background-color: firebrick;
-  padding: 0.75rem 1rem;
 }
-
-.menu{
+ul{
   list-style: none;
+  padding: 0.75rem 0;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 
 li{
   display: inline;
-  padding: 0 4.25rem;
 }
 
-.tablet{
-  visibility: hidden;
-  color: black;
+.tablet-screen{
+  display: none;
 }
 
-/* Store section */
-.store{
-  margin-top: 3rem;
-
-}
-
-.store-img{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-img{
-  max-width: 8rem;
-
-}
-.pen-product, .watch-product, .glasses-product{
-  display: flex;
-  flex-direction: column;
-}
-
-.pen, .watch, .glasses{
-  border: 4px solid black;
-  height: 9rem;
-  width: 10rem;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: space-around;
-  justify-content: center;
-}
-
-.biopen, .biowatch, .bioglasses{
-  background-color: black;
-  width: 100%;
-  height: 1rem;
-  text-align: center;
-  padding: 0.5rem 0;
-
-}
-/* Info Section*/
-.info{
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+/* Store and Info section */
+.store, .info{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3rem;
+}
+.product, .product-watch, .product-glasses{
+  width: 30%;
+}
+.product-img{
+  padding: 2rem 0;
+  height: 9rem;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.product-img img{
+  max-width: 8rem;
+}
+.description{
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+.location, .hours{
+  width:35%
+}
+.location .title{
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+}
+.hours .title{
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.location span{
+  color: black;
+}
+
+.hours span{
+  color: black;
+}
+
+footer{
+  background-color: black;
+  padding: 5rem 0;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+
+/*MEDIA QUERIES TABLET */
+
+@media only screen and (max-width: 1024px){
+  .headline h4{
+    font-size: 0.5rem;
+  }
+  .headline h2{
+    font-size: 1rem;
+  }
+  ul{
+    display: none;
+  }
+  .tablet-screen{
+    display: block;
+    text-align: center;
+  }
+.product-glasses{
+  display: none;
+}
+.product, .product-watch{
+  width:47%;
+}
 
 .location, .hours{
   width: 35%;
 }
-
-.locationtitle, .hourstitle{
-  background-color: black;
-  padding: 1rem 3rem 1rem 3rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
+/* MEDIA QUERIES PHONE */
 
-p{
-  color:black;
-}
-
-/* Footer */
-footer{
-  background-color: black;
-  text-align: left;
-  padding: 5rem 4rem;
-  display: flex;
-  align-items: center;
-}
-/*Media Queries*/
-  @media only screen and (max-width: 1024px) and (min-width: 470px){
-html{
-    font-size: 13px;
-}
-.glasses-product{
-  display: none;
-}
-.store-img{
-  justify-content: center;
-  align-items: center;
-}
-.pen-product{
-  margin-right: 30px;
-}
-.main{
-  margin-left: 40px;
-  width: 250px;
-  padding: 24px 36px;
-  line-height: 2.5rem;
-}
-.bikes{
-  font-weight: normal;
-}
-
-.menu{
-  display: none;
-}
-
-.tablet{
-  visibility: visible;
-  color: white;
-  font-family: Helvetica;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+@media only screen and (max-width: 470px){
+  .background-banner{
+    height: 15rem;
+  }
+  .headline{
+    width: 100%
+    padding: 1rem 2rem;
+    margin-top: 10rem;
+  }
+  .headline h4{
+    font-size: 0.77rem;
+  }
+ .product-watch{
+   display: none;
+ }
+.product{
+  width: 90%;
+  margin: auto;
 }
 
 .info{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
-
 
 .location, .hours{
-  width: 20%;
-
-}
-.location{
-  margin-right: 20px;
-}
-.locationtitle, .hourstitle{
-  margin-bottom: 20px;
-  text-align: left;
-}
+  width: 90%;
+  margin: 0.5rem auto;
 }
 
-@media only screen and (max-width: 470px){
-  .banner{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  .main{
-    font-family: Helvetica;
-    font-weight: bold;
-  }
-
-  .arrival{
-    font-size: 0.77rem;
-  }
-  .bikes{
-    font-size: 1rem;
-  }
-
-  .watch-product, .glasses-product{
-    display: none;
-  }
+footer{
+  text-align: center;
+}
 }
