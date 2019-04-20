@@ -171,7 +171,7 @@ footer{
   .headline{
     width: 100%;
     padding: 1rem 2rem;
-    margin-top: 10rem;
+    top: 10rem;
   }
   .headline h4{
     font-size: 0.77rem;
@@ -184,11 +184,11 @@ footer{
   margin: auto;
 }
 
-.info{
+.product, .info{
   flex-wrap: wrap;
 }
 
-.location, .hours{
+.Info{
   width: 90%;
   margin: 0.5rem auto;
 }
