@@ -165,6 +165,9 @@ footer{
 /* MEDIA QUERIES PHONE */
 
 @media only screen and (max-width: 470px){
+  footer{
+    text-align: center;
+  }
   .background-banner{
     height: 15rem;
   }
@@ -184,16 +187,12 @@ footer{
   margin: auto;
 }
 
-.product, .info{
+.store, .info{
   flex-wrap: wrap;
 }
 
-.Info{
+.info{
   width: 90%;
   margin: 0.5rem auto;
-}
-
-footer{
-  text-align: center;
 }
 }
