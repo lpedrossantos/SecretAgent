@@ -1,7 +1,10 @@
 html{
   font-size: 18px;
+  box-sizing: border-box;
 }
-
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body{
   font-family: Helvetica;
   color: white;
@@ -177,7 +180,7 @@ footer{
 
   .headline{
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     top: 10rem;
   }
   .headline h4{
