@@ -45,7 +45,6 @@ body{
   width: 20rem;
   padding: 2rem 0 2rem 3rem;
   background-color: black;
-  max-width: 100%;
 }
 .headline h4{
   font-size: 1rem;
@@ -177,6 +176,7 @@ footer{
     width: 100%;
     padding: 1rem 2rem;
     top: 10rem;
+    max-width: 100%;
   }
   .headline h4{
     font-size: 0.77rem;
