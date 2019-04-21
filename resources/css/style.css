@@ -45,6 +45,7 @@ body{
   width: 20rem;
   padding: 2rem 0 2rem 3rem;
   background-color: black;
+  max-width: 100%;
 }
 .headline h4{
   font-size: 1rem;
