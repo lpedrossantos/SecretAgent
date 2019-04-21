@@ -169,15 +169,12 @@ footer{
   footer{
     text-align: center;
   }
-  .container{
-    width: 470px;
-    max-width: 100%;
-  }
+
   .background-banner{
     height: 15rem;
   }
   .headline{
-    width: 80%;
+    width: 90%;
     padding: 1rem 2rem;
     top: 10rem;
   }
