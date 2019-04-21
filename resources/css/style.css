@@ -44,7 +44,13 @@ body{
   top: 9rem;
   width: 20rem;
   padding: 2rem 0 2rem 3rem;
+}
+
+.container-head .headline{
   background-color: black;
+  width: 960px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 .headline h4{
   font-size: 1rem;
@@ -173,7 +179,7 @@ footer{
   .background-banner{
     height: 15rem;
   }
-  .headline{
+  .container-head .headline{
     width: 100%;
     padding: 1rem 2rem;
     top: 10rem;
