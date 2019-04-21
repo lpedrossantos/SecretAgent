@@ -171,6 +171,7 @@ footer{
   }
   .container{
     width: 470px;
+    max-width: 100%;
   }
   .background-banner{
     height: 15rem;
